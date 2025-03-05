@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FragranZ</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <nav class="navbar">
+        <h1>FragranZ</h1>
+        <div class="navbar-links">
+            <p class="navbar-link">
+                <a href="index.html">Home</a>
+            </p>
+            <p class="navbar-link">
+                <a href="index2.html">Collections</a>
+            </p>
+            <p class="navbar-link">
+                <a href="index3.html">Contacts</a>
+            </p>
+        </div>
+
+        <div class="navbar-menu-toggle" onclick="showNavbar()">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+    </nav>
+
+    <!-- side navbar -->
+    <div class="side-navbar">
+        <p style="text-align: right;" onclick="removeNavbar()" class="cancel-mark">
+            <i class="fa-solid fa-xmark"></i>
+        </p>
+
+        <div class="side-navbar-links">
+            <p class="side-navbar-link">
+                <a href="index.html">Home</a>
+            </p>
+            <p class="side-navbar-link">
+                <a href="index2.html">Collections</a>
+            </p>
+            <p class="side-navbar-link">
+                <a href="index3.html">Contacts</a>
+            </p>
+        </div>
+    </div>
+
+
+    <div class="contact-info">
+        <form id="contactForm" action="/post" method="post">
+            <h2>Contact Us</h2>
+            <div id="forfirst" class="input-group">
+                <label id="forname" for="name">Name:</label><br>
+                <input type="text" id="name" name="name" placeholder="enter your name" required><br>
+            </div>
+
+            <div id="forsecond" class="input-group">
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" placeholder="enter your email" required><br>
+            </div>
+
+            <div id="forthird" class="input-group">
+                <label for="message">Feedback:</label><br>
+                <textarea id="message" name="message" placeholder="enter your feedback" required></textarea><br>
+            </div>
+
+            <button type="submit" class="contact-submit">Submit</button>
+        </form>
+    </div>
+
+    <div class="footer">
+        <div class="footer-container">
+            <div class="footer-box-1">
+                <h2 class="headingtext">FragranZ</h2>
+                <p>Discover the essence of elegance at FrangranZ. Our curated collection of premium perfumes blends
+                    luxury and sophistication, offering you an unforgettable olfactory experience. <br>
+                    Contact us at +91 9876543210 for personalized recommendations.</p>
+                <i class="fa-brands fa-instagram" style="color:aliceblue;"></i>
+                <i class="fa-brands fa-twitter" style="color: aliceblue;"></i>
+                <i class="fa-brands fa-facebook" style="color: aliceblue;"></i>
+            </div>
+        </div>
+        <p>@ 2024 FragranZ.com</p>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
