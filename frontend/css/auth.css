@@ -1,0 +1,55 @@
+body {
+    background-color: #ccc;
+}
+
+.auth-container,
+.auth-container1 {
+    max-width: 400px;
+    margin: 100px auto;
+    padding: 30px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-family: 'Poppins', sans-serif;
+    background-color: #fefefe;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+.input-group {
+    margin-bottom: 15px;
+}
+
+input,
+select,
+button {
+    width: 90%;
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    margin-top: 5px;
+    font-size: 16px;
+}
+
+select {
+    width: 95%;
+}
+
+button {
+    background-color: #1D232C;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #333;
+}
+
+#registerPage {
+    display: none;
+}

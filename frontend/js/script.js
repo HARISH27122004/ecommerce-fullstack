@@ -8,7 +8,6 @@ function removeNavbar() {
     if (sidenav) sidenav.style.left = "-60%";
 }
 
-
 document.addEventListener("DOMContentLoaded", function () {
 
     var productContainer = document.getElementById("product");
@@ -41,3 +40,31 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     }
 });
+
+document.getElementById("contactForm").addEventListener("submit", async (e) => {
+    e.preventDefault();
+    var customerName = document.getElementById("name")
+    var customerEmail = document.getElementById("email")
+    var customerFeedback = document.getElementById("message")
+    var response = await fetch('http://localhost:7700/api/contact', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({ name: customerName.value, 
+                               email: customerEmail.value, 
+                               feedback: customerFeedback.value 
+                            })
+    })
+    const data = await response.json();
+    if (response.status === 200) {
+        customerName.value = "";
+        customerEmail.value = "";
+        customerFeedback.value = "";
+        alert('Submitted successfully!!!')
+        console.log(data);
+    }
+    else {
+        alert("something went wrong!")
+    }
+})

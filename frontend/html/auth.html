@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FragranZ Auth</title>
+    <link rel="stylesheet" href="../css/auth.css" />
+</head>
+
+<body>
+    <div class="auth-container1" id="loginPage">
+        <h2 id="form-title">Login</h2>
+        <form id="loginForm">
+            <div class="input-group">
+                <input type="email" id="loginEmail" placeholder="Email" required />
+            </div>
+
+            <div class="input-group">
+                <input type="password" id="loginPassword" placeholder="Password" required />
+            </div>
+            <button type="submit">Login</button>
+        </form>
+        <p>
+            <span id="toggleText">Don't have an account?</span>
+            <button id="registerButton" onclick="registerBtn()"><a href="#registerPage">Register Here</a></button>
+        </p>
+    </div>
+
+    <div class="auth-container" id="registerPage">
+        <h2 id="form-title">Register</h2>
+        <form id="registerForm">
+            <div id="nameField" class="input-group">
+                <input type="text" id="registerName" placeholder="Name" required />
+            </div>
+
+            <div class="input-group">
+                <input type="email" id="registerEmail" placeholder="Email" required />
+            </div>
+
+            <div class="input-group">
+                <input type="password" id="registerPassword" placeholder="Password" required />
+            </div>
+
+            <div id="roleField" class="input-group">
+                <select id="registerRole">
+                    <option value="Customer">Customer</option>
+                    <option value="Admin">Admin</option>
+                </select>
+            </div>
+
+            <button type="submit">Register here</button>
+        </form>
+
+        <p>
+            <span id="toggleText">Already have an account?</span>
+            <button id="loginButton" onclick="loginBtn()"><a href="#loginPage">Login</a></button>
+        </p>
+    </div>
+    <script src="../js/auth.js"></script>
+</body>
+
+</html>

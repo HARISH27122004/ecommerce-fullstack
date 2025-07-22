@@ -11,7 +11,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
         integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -56,60 +56,27 @@
         </div>
     </div>
 
-    <div class="product-section">
-        <form class="product-search">
-            <input type="text" id="search" placeholder="Search">
-            <i class="fa-solid fa-magnifying-glass"></i>
+
+    <div class="contact-info">
+        <form id="contactForm">
+            <h2>Contact Us</h2>
+            <div id="forfirst" class="input-group">
+                <label id="forname" for="name">Name:</label><br>
+                <input type="text" id="name" name="name" placeholder="enter your name" required><br>
+            </div>
+
+            <div id="forsecond" class="input-group">
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" placeholder="enter your email" required><br>
+            </div>
+
+            <div id="forthird" class="input-group">
+                <label for="message">Feedback:</label><br>
+                <textarea id="message" name="message"></textarea><br>
+            </div>
+
+            <button type="submit" class="contact-submit">Submit</button>
         </form>
-
-        <p id="noResults">
-            No Results Found
-        </p>
-
-        <div class="products" id="product">
-
-            <div class="products-box">
-                <img src="./images/scent9.jpg">
-                <p>Shalimar</p>
-            </div>
-
-            <div class="products-box">
-                <img src="./images/scent8.jpg">
-                <p>Versatile Cherry</p>
-            </div>
-
-            <div class="products-box">
-                <img src="./images/scent7.jpg">
-                <p>Burberry</p>
-            </div>
-
-            <div class="products-box">
-                <img src="./images/scent6.jpg">
-                <p>Pleasant Cherry</p>
-            </div>
-
-
-            <div class="products-box">
-                <img src="./images/scent5.jpg">
-                <p>Chance Chanel</p>
-            </div>
-
-            <div class="products-box">
-                <img src="./images/scent3.jpg">
-                <p>Premium Shalimar</p>
-            </div>
-
-            <div class="products-box">
-                <img src="./images/scent2.jpg">
-                <p>Calvin Klien</p>
-            </div>
-
-            <div class="products-box">
-                <img src="./images/scent1.jpg">
-                <p>Poison Dior</p>
-            </div>
-
-        </div>
     </div>
 
     <div class="footer">
@@ -124,11 +91,9 @@
                 <i class="fa-brands fa-facebook" style="color: aliceblue;"></i>
             </div>
         </div>
-        <p>@ 2024 FragranZ.com</p>
+        <p>@ 2025 FragranZ.com</p>
     </div>
-    </div>
-
-    <script src="script.js"></script>
+    <script src="../js/script.js"></script>
 </body>
 
 </html>
