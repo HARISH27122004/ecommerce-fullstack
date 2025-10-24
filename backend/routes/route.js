@@ -3,6 +3,10 @@ const router = express.Router();
 const { register, login, getLoginPage, getAdminPage, createContact } = require('../controller/controller.js');
 const { protect, adminOnly } = require("../middleware/auth.js");
 
+router.get('/',(req,res)=>{
+  res.send('Api is working!')
+})
+
 router.post('/register', register)
 
 router.post('/login', login)

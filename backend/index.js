@@ -19,7 +19,7 @@ mongoose.connect(process.env.MONGODB_URI)
         console.log("successfully connected");
 
         app.listen(PORT, () => {
-            console.log(`http://localhost:${PORT}/api/getLoginpage`);
+            console.log(`http://localhost:${PORT}/api/getloginpage`);
         });
     })
     .catch(() => {
