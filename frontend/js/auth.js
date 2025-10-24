@@ -20,7 +20,7 @@ function loginBtn() {
 document.getElementById("registerForm").addEventListener("submit", async (e) => {
   e.preventDefault();
   try {
-    const response = await fetch('http://localhost:7700/api/register', {
+    const response = await fetch('https://ecommerce-fullstack-8r0m.onrender.com/api/register', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'
@@ -52,7 +52,7 @@ document.getElementById("registerForm").addEventListener("submit", async (e) => 
 
 document.getElementById("loginForm").addEventListener("submit", async (e) => {
   e.preventDefault();
-  const response = await fetch('http://localhost:7700/api/login', {
+  const response = await fetch('https://ecommerce-fullstack-8r0m.onrender.com/api/login', {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json'
@@ -74,7 +74,7 @@ document.getElementById("loginForm").addEventListener("submit", async (e) => {
     alert("Login Successfully")
     if (data.token) {
       localStorage.setItem("token", data.token);
-      const userResponse = await fetch("http://localhost:7700/api/me", {
+      const userResponse = await fetch("https://ecommerce-fullstack-8r0m.onrender.com/api/me", {
         method: 'GET',
         headers: {
           Authorization: `Bearer ${data.token}`,

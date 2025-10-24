@@ -46,7 +46,7 @@ document.getElementById("contactForm").addEventListener("submit", async (e) => {
     var customerName = document.getElementById("name")
     var customerEmail = document.getElementById("email")
     var customerFeedback = document.getElementById("message")
-    var response = await fetch('http://localhost:7700/api/contact', {
+    var response = await fetch('https://ecommerce-fullstack-8r0m.onrender.com/api/contact', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
