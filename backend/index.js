@@ -12,14 +12,14 @@ app.use(cors())
 app.use(express.json())
 app.use(express.static(path.join(__dirname, '../frontend')))
 
-app.use('/api', router)
+app.use('/api/getLoginPage', router)
 
-mongoose.connect(process.env.MONGO_URL)
+mongoose.connect(process.env.MONGODB_URI)
     .then(() => {
         console.log("successfully connected");
 
         app.listen(PORT, () => {
-            console.log(`http://localhost:${PORT}`);
+            console.log(`http://localhost:${PORT}/api/getLoginPage`);
         });
     })
     .catch(() => {

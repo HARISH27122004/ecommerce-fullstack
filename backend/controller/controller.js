@@ -1,7 +1,7 @@
-const { users } = require('../models/model.js')
-const { contact } = require('../models/contactModel.js')
+const { users } = require('../models/model.js');
+const { contact } = require('../models/contactModel.js');
 const bcrypt = require("bcrypt");
-const jwt = require("jsonwebtoken")
+const jwt = require("jsonwebtoken");
 const path = require("path");
 
 const register = async (req, res) => {
